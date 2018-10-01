@@ -808,11 +808,12 @@ public class Almacen {
     }
     
     public void sacar_estante() {
-        System.out.println("Ingrese el nombre del producto: ");
+        System.out.println("Ingrese el nombre del producto que desea sacar: ");
         String nombre = teclado.nextLine();
-        Producto product = new Producto(nombre, 1234);
-        matriz[2][1].ingresa(product);
-        System.out.println(can_espacios(0,0));
-        System.out.println(can_espacios(0,1));
+        if (buscar_producto(nombre)) {
+            ///////recordar terminar de editar esta parte
+        }else{
+            System.out.println("Lo sentimos, el producto no se encuentra en este almacen");
+        }
     }
 }

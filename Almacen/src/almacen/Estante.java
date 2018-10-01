@@ -48,12 +48,23 @@ public class Estante {
         }
         return contador;
     }
-///////////////////////AAAAQUIII EL ERRORRRRR!!!!!
+
     public void ingresa(Producto producto) {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 7; j++) {
                 if (espacio[i][j].getProducto() == null) {
                     espacio[i][j].setProducto(producto);
+                    return;
+                }
+            }
+        }
+    }
+    /////////////reordar terminar de editar esta parte
+    public void saca(String producto){
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (buscar_producto(producto)) {
+                    espacio[i][j].setProducto(null);
                     return;
                 }
             }
