@@ -18,7 +18,7 @@ public class Almacen {
     
     public Almacen(){
         teclado = new Scanner(System.in);
-        this.almacen = new City();
+        almacen = new City();
 
         int num = 1;
         int iter = 0;
@@ -54,15 +54,25 @@ public class Almacen {
         }
 
         Producto alimentos = new Producto("Alimento", 123);
+        //Producto alimentosz = new Producto("Alimento", 123);
         Producto robotica = new Producto("Memoria", 1234);
+        //Producto roboticaz = new Producto("Memoria", 12324);
         Producto maletas = new Producto("Maleta", 4325);
+        //Producto maletasz = new Producto("Maleta", 4325);
         Producto juguetes = new Producto("Munieco", 1234);
+        //Producto juguetesz = new Producto("Munieco", 1234);
         Producto ropa1 = new Producto("Camisa", 12876);
+        //Producto ropaz1 = new Producto("Camisa", 12876);
         Producto ropa2 = new Producto("Pantalon", 123);
+        //Producto ropaz2 = new Producto("Pantalon", 123);
         Producto robotica1 = new Producto("Chip", 1234);
+        //Producto roboticaz1 = new Producto("Chip", 1234);
         Producto maletas1 = new Producto("Bolso", 4325);
+        //Producto maletasz1 = new Producto("Bolso", 4325);
         Producto juguetes1 = new Producto("Munieca", 1234);
+        //Producto juguetesz1 = new Producto("Munieca", 1234);
         Producto alimento1 = new Producto("Frijol", 12876);
+        //Producto alimentoz1 = new Producto("Frijol", 12876);
         
         Espacio[][] espacio1 = new Espacio[3][7];
         for (int i = 0; i < 3; i++) {
@@ -72,6 +82,18 @@ public class Almacen {
                 }
                 if (j < 6) {
                     espacio1[i][j] = new Espacio(robotica);
+                }
+            }
+        }
+        
+        Espacio[][] espacioz1 = new Espacio[3][7];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (j == 6) {
+                    espacioz1[i][6] = new Espacio(null);
+                }
+                if (j < 6) {
+                    espacioz1[i][j] = new Espacio(robotica);
                 }
             }
         }
@@ -88,6 +110,18 @@ public class Almacen {
             }
         }
         
+        Espacio[][] espacioz2 = new Espacio[3][7];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (j == 6) {
+                    espacioz2[i][6] = new Espacio(null);
+                }
+                if (j < 6) {
+                    espacioz2[i][j] = new Espacio(alimentos);
+                }
+            }
+        }
+        
         Espacio[][] espacio3 = new Espacio[3][7];
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 7; j++) {
@@ -96,6 +130,18 @@ public class Almacen {
                 }
                 if (j < 6) {
                     espacio3[i][j] = new Espacio(maletas);
+                }
+            }
+        }
+        
+        Espacio[][] espacioz3 = new Espacio[3][7];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (j == 6) {
+                    espacioz3[i][6] = new Espacio(null);
+                }
+                if (j < 6) {
+                    espacioz3[i][j] = new Espacio(maletas);
                 }
             }
         }
@@ -112,6 +158,18 @@ public class Almacen {
             }
         }
         
+        Espacio[][] espacioz4 = new Espacio[3][7];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (j == 6) {
+                    espacioz4[i][6] = new Espacio(null);
+                }
+                if (j < 6) {
+                    espacioz4[i][j] = new Espacio(juguetes);
+                }
+            }
+        }
+        
         Espacio[][] espacio5 = new Espacio[3][7];
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 7; j++) {
@@ -120,6 +178,18 @@ public class Almacen {
                 }
                 if (j < 6) {
                     espacio5[i][j] = new Espacio(ropa1);
+                }
+            }
+        }
+        
+        Espacio[][] espacioz5 = new Espacio[3][7];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (j == 6) {
+                    espacioz5[i][6] = new Espacio(null);
+                }
+                if (j < 6) {
+                    espacioz5[i][j] = new Espacio(ropa1);
                 }
             }
         }
@@ -136,6 +206,18 @@ public class Almacen {
             }
         }
         
+        Espacio[][] espacioz6 = new Espacio[3][7];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (j == 6) {
+                    espacioz6[i][6] = new Espacio(null);
+                }
+                if (j < 6) {
+                    espacioz6[i][j] = new Espacio(ropa2);
+                }
+            }
+        }
+        
         Espacio[][] espacio7 = new Espacio[3][7];
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 7; j++) {
@@ -144,6 +226,18 @@ public class Almacen {
                 }
                 if (j < 6) {
                     espacio7[i][j] = new Espacio(robotica1);
+                }
+            }
+        }
+        
+        Espacio[][] espacioz7 = new Espacio[3][7];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (j == 6) {
+                    espacioz7[i][6] = new Espacio(null);
+                }
+                if (j < 6) {
+                    espacioz7[i][j] = new Espacio(robotica1);
                 }
             }
         }
@@ -160,6 +254,18 @@ public class Almacen {
             }
         }
         
+        Espacio[][] espacioz8 = new Espacio[3][7];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (j == 6) {
+                    espacioz8[i][6] = new Espacio(null);
+                }
+                if (j < 6) {
+                    espacioz8[i][j] = new Espacio(maletas1);
+                }
+            }
+        }
+        
         Espacio[][] espacio9 = new Espacio[3][7];
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 7; j++) {
@@ -168,6 +274,18 @@ public class Almacen {
                 }
                 if (j < 6) {
                     espacio9[i][j] = new Espacio(juguetes1);
+                }
+            }
+        }
+        
+        Espacio[][] espacioz9 = new Espacio[3][7];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (j == 6) {
+                    espacioz9[i][6] = new Espacio(null);
+                }
+                if (j < 6) {
+                    espacioz9[i][j] = new Espacio(juguetes1);
                 }
             }
         }
@@ -184,85 +302,177 @@ public class Almacen {
             }
         }
         
+        Espacio[][] espacioz10 = new Espacio[3][7];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (j == 6) {
+                    espacioz10[i][6] = new Espacio(null);
+                }
+                if (j < 6) {
+                    espacioz10[i][j] = new Espacio(alimento1);
+                }
+            }
+        }
+        
         matriz = new Estante[10][2];
         
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 2; j++) {
-                if (i == 0) {
-                    Thing zona = new Thing(this.almacen, j, i);
+                if (i == 0 && j == 0) {
+                    Thing zona = new Thing(almacen, j, i);
                     Estante estante1 = new Estante(espacio1, zona);
                     matriz[i][j] = estante1;
                     zona.getIcon().setColor(Color.GREEN);
                     zona.getIcon().setLabel("Memoria");
                 }
+                
+                if (i == 0 && j == 1) {
+                    Thing zona = new Thing(almacen, j, i);
+                    Estante estante1 = new Estante(espacioz1, zona);
+                    matriz[i][j] = estante1;
+                    zona.getIcon().setColor(Color.GREEN);
+                    zona.getIcon().setLabel("Memoria");
+                }
 
-                if (i == 1) {
-                    Thing zona1 = new Thing(this.almacen, j, i);
+                if (i == 1 && j == 0) {
+                    Thing zona1 = new Thing(almacen, j, i);
                     Estante estante2 = new Estante(espacio2, zona1);
                     matriz[i][j] = estante2;
                     zona1.getIcon().setColor(Color.GREEN);
                     zona1.getIcon().setLabel("Alimento");
                 }
+                
+                if (i == 1 && j == 1) {
+                    Thing zona1 = new Thing(almacen, j, i);
+                    Estante estante2 = new Estante(espacioz2, zona1);
+                    matriz[i][j] = estante2;
+                    zona1.getIcon().setColor(Color.GREEN);
+                    zona1.getIcon().setLabel("Alimento");
+                }
 
-                if (i == 2) {
-                    Thing zona2 = new Thing(this.almacen, j, i);
+                if (i == 2 && j == 0) {
+                    Thing zona2 = new Thing(almacen, j, i);
                     Estante estante3 = new Estante(espacio3, zona2);
                     matriz[i][j] = estante3;
                     zona2.getIcon().setColor(Color.GREEN);
                     zona2.getIcon().setLabel("Maleta");
                 }
+                
+                if (i == 2 && j == 1) {
+                    Thing zona2 = new Thing(almacen, j, i);
+                    Estante estante3 = new Estante(espacioz3, zona2);
+                    matriz[i][j] = estante3;
+                    zona2.getIcon().setColor(Color.GREEN);
+                    zona2.getIcon().setLabel("Maleta");
+                }
 
-                if (i == 3) {
-                    Thing zona3 = new Thing(this.almacen, j, i);
+                if (i == 3 && j == 0) {
+                    Thing zona3 = new Thing(almacen, j, i);
                     Estante estante4 = new Estante(espacio4, zona3);
                     matriz[i][j] = estante4;
                     zona3.getIcon().setColor(Color.GREEN);
                     zona3.getIcon().setLabel("Munieco");
                 }
+                
+                if (i == 3 && j == 1) {
+                    Thing zona3 = new Thing(almacen, j, i);
+                    Estante estante4 = new Estante(espacioz4, zona3);
+                    matriz[i][j] = estante4;
+                    zona3.getIcon().setColor(Color.GREEN);
+                    zona3.getIcon().setLabel("Munieco");
+                }
 
-                if (i == 4) {
-                    Thing zona4 = new Thing(this.almacen, j, i);
+                if (i == 4 && j == 0) {
+                    Thing zona4 = new Thing(almacen, j, i);
                     Estante estante5 = new Estante(espacio5, zona4);
                     matriz[i][j] = estante5;
                     zona4.getIcon().setColor(Color.GREEN);
                     zona4.getIcon().setLabel("Camisa");
                 }
+                
+                if (i == 4 && j == 1) {
+                    Thing zona4 = new Thing(almacen, j, i);
+                    Estante estante5 = new Estante(espacioz5, zona4);
+                    matriz[i][j] = estante5;
+                    zona4.getIcon().setColor(Color.GREEN);
+                    zona4.getIcon().setLabel("Camisa");
+                }
 
-                if (i == 5) {
-                    Thing zona5 = new Thing(this.almacen, j, i);
+                if (i == 5 && j == 0) {
+                    Thing zona5 = new Thing(almacen, j, i);
                     Estante estante6 = new Estante(espacio6, zona5);
                     matriz[i][j] = estante6;
                     zona5.getIcon().setColor(Color.GREEN);
                     zona5.getIcon().setLabel("Pantalon");
                 }
+                
+                if (i == 5 && j == 1) {
+                    Thing zona5 = new Thing(almacen, j, i);
+                    Estante estante6 = new Estante(espacioz6, zona5);
+                    matriz[i][j] = estante6;
+                    zona5.getIcon().setColor(Color.GREEN);
+                    zona5.getIcon().setLabel("Pantalon");
+                }
 
-                if (i == 6) {
-                    Thing zona6 = new Thing(this.almacen, j, i);
+                if (i == 6 && j == 0) {
+                    Thing zona6 = new Thing(almacen, j, i);
                     Estante estante7 = new Estante(espacio7, zona6);
                     matriz[i][j] = estante7;
                     zona6.getIcon().setColor(Color.GREEN);
                     zona6.getIcon().setLabel("Chip");
                 }
+                
+                if (i == 6 && j == 1) {
+                    Thing zona6 = new Thing(almacen, j, i);
+                    Estante estante7 = new Estante(espacioz7, zona6);
+                    matriz[i][j] = estante7;
+                    zona6.getIcon().setColor(Color.GREEN);
+                    zona6.getIcon().setLabel("Chip");
+                }
 
-                if (i == 7) {
-                    Thing zona7 = new Thing(this.almacen, j, i);
+                if (i == 7 && j == 0) {
+                    Thing zona7 = new Thing(almacen, j, i);
                     Estante estante8 = new Estante(espacio8, zona7);
                     matriz[i][j] = estante8;
                     zona7.getIcon().setColor(Color.GREEN);
                     zona7.getIcon().setLabel("Bolso");
                 }
+                
+                if (i == 7 && j == 1) {
+                    Thing zona7 = new Thing(almacen, j, i);
+                    Estante estante8 = new Estante(espacioz8, zona7);
+                    matriz[i][j] = estante8;
+                    zona7.getIcon().setColor(Color.GREEN);
+                    zona7.getIcon().setLabel("Bolso");
+                }
 
-                if (i == 8) {
-                    Thing zona8 = new Thing(this.almacen, j, i);
+                if (i == 8 && j == 0) {
+                    Thing zona8 = new Thing(almacen, j, i);
                     Estante estante9 = new Estante(espacio9, zona8);
                     matriz[i][j] = estante9;
                     zona8.getIcon().setColor(Color.GREEN);
                     zona8.getIcon().setLabel("Munieca");
                 }
+                
+                if (i == 8 && j == 1) {
+                    Thing zona8 = new Thing(almacen, j, i);
+                    Estante estante9 = new Estante(espacioz9, zona8);
+                    matriz[i][j] = estante9;
+                    zona8.getIcon().setColor(Color.GREEN);
+                    zona8.getIcon().setLabel("Munieca");
+                }
 
-                if (i == 9) {
-                    Thing zona9 = new Thing(this.almacen, j, i);
+                if (i == 9 && j == 0) {
+                    Thing zona9 = new Thing(almacen, j, i);
                     Estante estante10 = new Estante(espacio10, zona9);
+                    matriz[i][j] = estante10;
+                    zona9.getIcon().setColor(Color.GREEN);
+                    zona9.getIcon().setLabel("Frijol");
+                }
+                
+                if (i == 9 && j == 1) {
+                    Thing zona9 = new Thing(almacen, j, i);
+                    Estante estante10 = new Estante(espacioz10, zona9);
                     matriz[i][j] = estante10;
                     zona9.getIcon().setColor(Color.GREEN);
                     zona9.getIcon().setLabel("Frijol");
@@ -535,23 +745,34 @@ public class Almacen {
                             System.out.println("Ingrese la cantidad de este producto: ");
                             int cantidad = teclado.nextInt();
                             int columna = iden_colum(nombre);
-                            if (cantidad <= can_espacios(columna,0)+can_espacios(columna,1)) {
-                                ////////////////////////////////////////////////////falta arreglar la funcion de ingresa, y revisar la funcion de buscar street ingresar
+                            if (cantidad <= can_espacios(columna,0) + can_espacios(columna,1)) {
                                 if (cantidad <= can_espacios(columna,0)) {
                                     movimiento_robot(nombre, num_disp_cola);
                                     for(int i=0; i < cantidad; i++){
                                         matriz[columna][0].ingresa(product);
-                                        System.out.println("Cantidad de esapcios vacios " + can_espacios(columna,0));
+                                        System.out.println("Cantidad de esapcios vacios 1 " + can_espacios(columna,0));
+                                        System.out.println("Cantidad de esapcios vacios 2 " + can_espacios(columna,1));
                                     }
                                     num_disp_cola--;
                                     s++;
                                 } else {
+                                    if (can_espacios(columna,0)==0) {
+                                        movimiento_robot(nombre, num_disp_cola);
+                                        for(int i=0; i < cantidad; i++){
+                                            matriz[columna][1].ingresa(product);
+                                            System.out.println("Cantidad de esapcios vacios 1 " + can_espacios(columna,0));
+                                            System.out.println("Cantidad de esapcios vacios 2 " + can_espacios(columna,1));
+                                        }
+                                        num_disp_cola--;
+                                        s++;
+                                    }else{
                                     movimiento_robot(nombre, num_disp_cola);
                                     int g=0;
                                     int can_espacios = can_espacios(columna,0);
                                     while(g < can_espacios){
                                         matriz[columna][0].ingresa(product);
-                                        System.out.println("Cantidad de esapcios vacios " + can_espacios(columna,0));
+                                        System.out.println("Cantidad de esapcios vacios 1 " + can_espacios(columna,0));
+                                        System.out.println("Cantidad de esapcios vacios 2 " + can_espacios(columna,1));
                                         g++;
                                     }
                                     num_disp_cola--;
@@ -560,13 +781,14 @@ public class Almacen {
                                     can_espacios = can_espacios(columna,1);
                                     while(y < can_espacios && g < cantidad){
                                         matriz[columna][1].ingresa(product);
-                                        System.out.println("Cantidad de esapcios vacios " + can_espacios(columna,0));
+                                        System.out.println("Cantidad de esapcios vaciosz 1 " + can_espacios(columna,0));
+                                        System.out.println("Cantidad de esapcios vaciosz 2 " + can_espacios(columna,1));
                                         y++;
                                         g++;
                                     }
                                     num_disp_cola--;
                                     s++;
-                                    //////////////////////////////////////////////////////////////////////////////////7
+                                    }
                                 }
                             } else {
                                 System.out.println("Lo sentimos, no hay espacio suficiente");
@@ -588,6 +810,9 @@ public class Almacen {
     public void sacar_estante() {
         System.out.println("Ingrese el nombre del producto: ");
         String nombre = teclado.nextLine();
-        System.out.println(can_espacios(2,0));
+        Producto product = new Producto(nombre, 1234);
+        matriz[2][1].ingresa(product);
+        System.out.println(can_espacios(0,0));
+        System.out.println(can_espacios(0,1));
     }
 }

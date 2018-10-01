@@ -54,7 +54,7 @@ public class Estante {
             for (int j = 0; j < 7; j++) {
                 if (espacio[i][j].getProducto() == null) {
                     espacio[i][j].setProducto(producto);
-                    break;
+                    return;
                 }
             }
         }
